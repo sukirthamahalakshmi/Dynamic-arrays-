@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+
+public class DynamicArrayExample {
+
+    public static void main(String[] args) {
+        // Create an ArrayList of integers
+        ArrayList<Integer> dynamicArray = new ArrayList<>();
+
+        // Adding elements to the dynamic array
+        dynamicArray.add(10);
+        dynamicArray.add(20);
+        dynamicArray.add(30);
+        dynamicArray.add(40);
+        
+        // Displaying the elements of the dynamic array
+        System.out.println("Elements in the dynamic array: " + dynamicArray);
+
+        // Accessing an element at a specific index
+        int element = dynamicArray.get(2);
+        System.out.println("Element at index 2: " + element);
+
+        // Removing an element at a specific index
+        dynamicArray.remove(1);  // Removes the element at index 1 (20)
+        System.out.println("Elements after removing index 1: " + dynamicArray);
+
+        // Modifying an element at a specific index
+        dynamicArray.set(1, 25);  // Changes the element at index 1 to 25
+        System.out.println("Elements after setting index 1 to 25: " + dynamicArray);
+
+        // Checking the size of the dynamic array
+        int size = dynamicArray.size();
+        System.out.println("Size of the dynamic array: " + size);
+
+        // Checking if the dynamic array contains a specific element
+        boolean contains = dynamicArray.contains(30);
+        System.out.println("Dynamic array contains 30: " + contains);
+        
+        // Iterating over elements using a for-each loop
+        System.out.print("Iterating over elements: ");
+        for (int num : dynamicArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Clearing all elements in the dynamic array
+        dynamicArray.clear();
+        System.out.println("Elements after clearing: " + dynamicArray);
+    }
+}
